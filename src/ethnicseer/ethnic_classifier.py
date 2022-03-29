@@ -164,6 +164,7 @@ class EthnicClassifier():
 		n_names = len(names)
 		ethnics = [None] * n_names
 		for i, n in enumerate(names):
+			n = n.replace(' ', '_')
 			f = self.extract_feat_str(n)
 			X_vector = self.vectorizer.transform([f])
 			y_hat = self.clf.predict(X_vector)[0]

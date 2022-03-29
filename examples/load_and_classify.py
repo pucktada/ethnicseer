@@ -1,7 +1,7 @@
-from nameseer import NameClassifier
+from ethnicseer import EthnicClassifier
 
-nc = NameClassifier.load_pretrained_model()
+ec = EthnicClassifier.load_pretrained_model()
 print('possible classes: ')
-print(nc.name_classes())
-print('clssifing names: ประยุทธ์ จันทร์โอชา, แอดวานซ์อินโฟร์เซอร์วิส')
-print(nc.classify_names(['ประยุทธ์ จันทร์โอชา','แอดวานซ์อินโฟร์เซอร์วิส']))
+print(ec.ethnicity_classes())
+print('clssifing names: Yūta Nakayama, Marcel Halstenberg, Raphaël Varane')
+print(ec.classify_names(['Yūta Nakayama','Marcel Halstenberg','Raphaël Varane']))

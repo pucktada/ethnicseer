@@ -1,8 +1,8 @@
-from nameseer import NameClassifier
-from nameseer import load_from_directory, train_model, train_and_evaluate
+from ethnicseer import EthnicClassifier
+from ethnicseer import load_from_directory, train_model, train_and_evaluate
 
-names, cats = load_from_directory('data/small_companies')
+names, ethnics = load_from_directory('data/names')
 print(names[:10])
-print(cats[:10])
-nc = train_model(names, cats)
-nc.save_model('src/nameseer/nameseer')
+print(ethnics[:10])
+nc = train_model(names, ethnics)
+nc.save_model('src/ethnicseer/ethnicseer')

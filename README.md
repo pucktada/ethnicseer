@@ -11,20 +11,19 @@
 * abydos
 * scikit-learn
 * nltk
-* pythainlp
 * python = 3.9+
 
 # Installation
 
-`nameseer` can be installed using `pip` 
+`ethnicseer` can be installed using `pip` 
 
 ```
-pip install nameseer
+pip install ethnicseer
 ```
 
 # Usages
 
-Once installed, you can use `nameseer` within your python code to classify whether a Thai name is a person name or a corporate name. 
+Once installed, you can use `ethnicseer` within your python code to classify whether a Thai name is a person name or a corporate name. 
 
 ```
 >>> from nameseer import NameClassifier
@@ -37,7 +36,7 @@ Once installed, you can use `nameseer` within your python code to classify wheth
 ## Citation
 
 ```
-Treeratpituk, Pucktada (2022). Nameseer: a Thai person name classifier. Mar 29, 2022. See https://github.com/botx/nameseer
+Treeratpituk, Pucktada, and C. Lee Giles. "Name-ethnicity classification and ethnicity-sensitive name matching." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 26. No. 1. 2012.
 ```
 
 ## Author

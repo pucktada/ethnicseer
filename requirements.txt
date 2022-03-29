@@ -1,5 +1,4 @@
 abydos
 scikit-learn
 nltk
-pythainlp
 -e .
