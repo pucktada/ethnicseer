@@ -26,11 +26,11 @@ pip install ethnicseer
 Once installed, you can use `ethnicseer` within your python code to classify whether a Thai name is a person name or a corporate name. 
 
 ```
->>> from nameseer import NameClassifier
+>>> from ethnicseer import EthnicClassifier
 
->>> nc = NameClassifier.load_pretrained_model()
->>> nc.classify_names(['ประยุทธ์ จันทร์โอชา','แอดวานซ์อินโฟร์เซอร์วิส']
-['person', 'company']
+>>> ec = EthnicClassifier.load_pretrained_model()
+>>> ec.classify_names(['Yūta Nakayama','Marcel Halstenberg','Raphaël Varane'])
+['jap', 'ger', 'frn']
 ```
 
 ## Citation
