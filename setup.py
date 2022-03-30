@@ -15,6 +15,11 @@ setuptools.setup(name='ethnicseer',
       packages=setuptools.find_packages('src'),
       package_dir={'': 'src'},
       package_data={'': ['*.pk']},
-      python_requires=">=3.9",
+      python_requires=">=3.7.6",      
 	include_package_data=True,
+      install_requires=[
+          'abydos',
+          'scikit-learn',
+          'nltk',
+      ],
       zip_safe=False)
